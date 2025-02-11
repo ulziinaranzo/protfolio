@@ -3,10 +3,12 @@
   flex-direction: column;
   gap: 16px;
   justify-content: center;
+  padding: 96px 80px;
 }
-.titles > div {
+.titles > div:first-child {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #e5e7eb;
   width: 75px;
   height: 28px;
@@ -16,11 +18,14 @@
   color: #4b5563;
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
 }
 .container {
   padding-left: 112px;
   padding-right: 112px;
   display: grid;
-  grid-template-columns: 1fr repeat(8);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  width: 1216px;
+  flex-wrap: wrap;
 }

@@ -74,14 +74,11 @@ export const Skills = () => {
       <div>Skills</div>
       <div>The skills, tools and technologies I am really good at:</div>
 
-      <div className={styles.skillscontainer}>
-        <div className={styles.container}>
-          {arr.map((item, index) => {
-            return <Skillsbox key={index} {...item} />;
-          })}
-        </div>
+      <div className={styles.container}>
+        {arr.map((item, index) => {
+          return <Skillsbox key={index} {...item} />;
+        })}
       </div>
-      <div className={styles.skillscontainer1}></div>
     </div>
   );
 };
