@@ -30,7 +30,7 @@ const arr = [
   },
   {
     img: "Images/icon-socket.png",
-    title: "",
+    title: "Socket",
   },
 ];
 
