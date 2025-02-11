@@ -1,0 +1,30 @@
+.header {
+  border: 5px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 80px;
+  height: 68px;
+  align-items: center;
+}
+ß .TOM {
+  color: #111827;
+  font-size: 30px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  color: #4b5563;
+}
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 136px;
+  height: 36px;
+  border-radius: 10px;
+  color: white;
+}

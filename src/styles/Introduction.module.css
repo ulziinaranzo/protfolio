@@ -1,0 +1,63 @@
+.introduction {
+  display: flex;
+  gap: 48px;
+  padding: 96px 80px;
+  height: 556px;
+  border: 5px solid red;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.title {
+  font-size: 72px;
+  display: flex;
+  justify-content: left;
+}
+.text {
+  width: 600px;
+  height: 96px;
+  margin-bottom: 40px;
+}
+.first > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.first > div:nth-child(4) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.first > div:nth-child(5) {
+  display: flex;
+  justify-content: left;
+  gap: 4px;
+  margin-top: 40px;
+}
+.second {
+  display: flex;
+
+  position: relative;
+  padding-right: 112px;
+  width: 568px;
+  height: 364px;
+}
+.second > img:nth-child(1) {
+  position: absolute;
+
+  height: 320px;
+  width: 280px;
+  z-index: 100;
+  left: 980px;
+}
+
+.second > img:nth-child(2) {
+  height: 320px;
+  width: 280px;
+  z-index: -1;
+  position: absolute;
+  top: 40px;
+  left: 1020px;
+}
