@@ -1,14 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  background-color: #f9fafb;
-  height: 1140px;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  gap: 48px;
 }
 .box {
-  display: flex;
-  padding: 96px 80px;
-  flex-direction: column;
   gap: 48px;
+  display: flex;
+  flex-direction: column;
 }

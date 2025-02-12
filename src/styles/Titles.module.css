@@ -1,13 +1,24 @@
-.Titles {
-    display: flex;
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.titleBox {
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e5e7eb;
+  width: 100px;
+  height: 28px;
+  border-radius: 10px;
+  text-align: center;
+}
+.subtitle {
   color: #4b5563;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 4px 12px;
-  border-radius: 20px;
-  width: fit-content;
-  margin: 0 auto;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}

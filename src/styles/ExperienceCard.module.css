@@ -1,0 +1,36 @@
+.smallcontainer {
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+.smallcontainer > img {
+  width: 206px;
+  height: 28px;
+  justify-content: flex-start;
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  gap: 16px;
+}
+.textBox > h1 {
+  color: #111827;
+  font-size: 20px;
+}
+.textBox > ul {
+  color: #4b5563;
+  font-size: 16px;
+  gap: 4px;
+  padding-left: 14px;
+}
+.smallcontainer > div:last-child {
+  justify-content: center;
+  align-items: center;
+  color: #4b5563;
+  font-size: 16px;
+}
