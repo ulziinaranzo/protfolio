@@ -2,17 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
   justify-content: center;
   padding: 96px 80px;
+  text-align: center;
 }
 .titles > div:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e5e7eb;
-  width: 75px;
+  width: 100px;
   height: 28px;
   border-radius: 10px;
+  text-align: center;
 }
 .titles > div:nth-child(2) {
   color: #4b5563;
@@ -21,11 +24,13 @@
   margin-bottom: 32px;
 }
 .container {
-  padding-left: 112px;
-  padding-right: 112px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 1216px;
+  width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
 }
