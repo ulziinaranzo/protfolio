@@ -1,20 +1,28 @@
 import styles from "../styles/Workcard.module.css";
 
-export const Workcard = (props) => {
+export const Workcard = ({ img, title, text, skills, icon, position }) => {
   return (
     <div className={styles.cardcontainer}>
-      <div className={styles.picture}>
-        <img src={props.img} alt="Card visual" />
+      <div
+        className={`${styles.picture} ${
+          position === "second" ? styles.right : ""
+        }`}
+      >
+        <img src={img} alt="Card visual" />
       </div>
-      <div className={styles.box}>
-        <h1>{props.title}</h1>
-        <p>{props.text}</p>
+      <div
+        className={`${styles.box} ${
+          position === "second" ? styles.left : ""
+        }`}
+      >
+        <h1>{title}</h1>
+        <p>{text}</p>
         <div className={styles.skillsContainer}>
-          {props.skills.map((item, index) => (
+          {skills.map((item, index) => (
             <div key={index} className={styles.skillItem}>{item}</div>
           ))}
         </div>
-        <img src={props.icon} alt="Icon" />
+        <img src={icon} alt="Icon" />
       </div>
     </div>
   );

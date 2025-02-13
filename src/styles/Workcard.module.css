@@ -13,8 +13,11 @@
   background-color: #f9fafb;
   display: flex;
   align-items: center;
-  justify-content: center;
-  order: 2; /* Add this line */
+  justify-content: center; 
+  order: 1;
+}
+.picture.right {
+  order: 2;
 }
 
 .picture > img {
@@ -29,7 +32,10 @@
   flex-direction: column;
   gap: 24px;
   padding: 48px;
-  order: 1; /* Add this line */
+  order: 2;
+}
+.box.left {
+  order: 1;
 }
 
 .box > h1 {
