@@ -1,22 +1,20 @@
 import styles from "../styles/Workcard.module.css";
 
-export const Workcard = ({ img, title, text, skills, icon, reverse}) => {
-  console.log("Reverse prop:", reverse);
-  
+export const Workcard = (props) => {
   return (
-    <div className={`${styles.cardcontainer} ${reverse? styles.reverse : ""}`}>
+    <div className={styles.cardcontainer}>
       <div className={styles.picture}>
-        <img src={img}></img>
+        <img src={props.img} alt="Card visual" />
       </div>
       <div className={styles.box}>
-        <h1>{title}</h1>
-        <p>{text}</p>
+        <h1>{props.title}</h1>
+        <p>{props.text}</p>
         <div className={styles.skillsContainer}>
-        {skills.map((item, index) => (
-    <div key={index} className={styles.skillItem}>{item}</div>
-  ))}
+          {props.skills.map((item, index) => (
+            <div key={index} className={styles.skillItem}>{item}</div>
+          ))}
         </div>
-        <img src={icon}></img>
+        <img src={props.icon} alt="Icon" />
       </div>
     </div>
   );
