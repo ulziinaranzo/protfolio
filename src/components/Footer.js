@@ -1,4 +1,6 @@
 import styles from "../styles/Footer.module.css";
+import { Titles } from "./Titles";
+
 
 export const Footer = () => {
   return (

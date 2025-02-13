@@ -5,6 +5,7 @@
   align-items: center;
   background-color: white;
   gap: 48px;
+  padding: 96px 80px;
 }
 .box {
   gap: 48px;

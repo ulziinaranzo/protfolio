@@ -11,10 +11,11 @@
   justify-content: center;
   align-items: center;
   background-color: #e5e7eb;
-  width: 100px;
+  width: fit-content;
   height: 28px;
   border-radius: 10px;
   text-align: center;
+  padding: 4px 20px;
 }
 .subtitle {
   color: #4b5563;

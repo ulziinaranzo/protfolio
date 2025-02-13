@@ -5,18 +5,22 @@
   background-color: white;
   border-radius: 30px;
   box-shadow: 3px 8px 15px -11px rgba(0, 0, 0, 0.59);
+  overflow: hidden;
 }
 .picture {
+  flex: 1;
   background-color: #f9fafb;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 .picture > img {
   padding: 48px;
-  height: 384px;
-  width: 480px;
+  height: 100%;
+  width: 100%;
 }
 .box {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -30,20 +34,26 @@
   font-size: 16px;
   color: #4b5563;
 }
-.box > div:first-child {
+.box > img {
+  width: 36px;
+  height: 36px;
+}
+.skillsContainer {
   display: flex;
   gap: 8px;
   height: 100px;
   width: 480px;
   flex-wrap: wrap;
+  flex-direction: row;
 }
-.box > div:first-child > div {
+.skillItem {
   color: #4b5563;
   background-color: #e5e7eb;
   padding: 4px 20px;
   border-radius: 10px;
+  width: fit-content;
 }
-.box > img {
-  width: 36px;
-  height: 36px;
+.reverse {
+  flex-direction: row-reverse !important;
+  justify-content: flex-end;
 }
