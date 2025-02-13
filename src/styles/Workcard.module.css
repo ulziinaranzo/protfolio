@@ -1,11 +1,13 @@
 .cardcontainer {
   display: flex;
-  width: 1152px;
+  width: 100%;
+  max-width: 1152px;
   height: 480px;
   background-color: white;
   border-radius: 30px;
   box-shadow: 3px 8px 15px -11px rgba(0, 0, 0, 0.59);
   overflow: hidden;
+  margin: 20px;
 }
 
 .picture {
@@ -13,59 +15,65 @@
   background-color: #f9fafb;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   order: 1;
 }
+
 .picture.right {
   order: 2;
 }
 
 .picture > img {
-  padding: 48px;
-  height: 100%;
-  width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+  width: auto;
+  padding: 24px;
 }
 
 .box {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 48px;
+  gap: 16px;
+  padding: 24px;
   order: 2;
 }
+
 .box.left {
   order: 1;
 }
 
 .box > h1 {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .box > p {
-  width: 480px;
   font-size: 16px;
   color: #4b5563;
+  line-height: 1.5;
+  flex-grow: 1;
 }
 
 .box > img {
   width: 36px;
   height: 36px;
+  margin-top: 16px;
 }
 
 .skillsContainer {
   display: flex;
   gap: 8px;
-  height: 100px;
-  width: 480px;
   flex-wrap: wrap;
-  flex-direction: row;
+  margin-top: 12px;
 }
 
 .skillItem {
   color: #4b5563;
   background-color: #e5e7eb;
-  padding: 4px 20px;
-  border-radius: 10px;
-  width: fit-content;
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-transform: capitalize;
 }
